@@ -34,7 +34,7 @@ function deleteItem(i) {
     taskArray.splice(i, 1)
     localStorage.setItem("elements", JSON.stringify(taskArray))
     showItems()
-
+    $("#deleted").toast("show")
 }
 
 list.addEventListener('click', function (e) {
